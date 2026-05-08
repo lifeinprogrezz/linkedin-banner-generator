@@ -28,3 +28,7 @@ Edit the `draw_*` calls in `generate_banners.py`. The right-anchored layout uses
 - `right_x` = right padding from canvas edge (default `W - 36`)
 - `top_y` = vertical anchor from top (variant 2/3) or computed from the bottom (variant 3 tagline)
 - `tracking_em` = letter-spacing in em units (0.18 in the tagline = ~18% extra)
+
+## License
+
+MIT — free to use, modify, and distribute. See [`LICENSE`](./LICENSE).
