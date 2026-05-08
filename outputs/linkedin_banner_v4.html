@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LinkedIn Banner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 1584px;
+    height: 396px;
+    overflow: hidden;
+    background: #FAFAFA;
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: geometricPrecision;
+  }
+
+  .banner {
+    position: relative;
+    width: 1584px;
+    height: 396px;
+    background: #FAFAFA;
+  }
+
+  /* Element 1 — main statement
+     Vertically centered, then nudged up 30px so the pair (E1 + E2)
+     reads as visually centered. translateY(-50%) anchors by center. */
+  .main {
+    position: absolute;
+    left: 100px;
+    top: calc(50% - 30px);
+    transform: translateY(-50%);
+    margin: 0;
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 1.0;
+    letter-spacing: -0.035em;
+    color: #141413;
+    white-space: nowrap;
+  }
+
+  /* Element 2 — sub line
+     E1 top edge = (50% - 30px) - 48px = 50% - 78px
+     E1 bottom edge = 50% - 78px + 96px = 50% + 18px
+     E2 top = 50% + 18px + 24px = 50% + 42px */
+  .sub {
+    position: absolute;
+    left: 100px;
+    top: calc(50% + 42px);
+    margin: 0;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    color: #666666;
+    white-space: nowrap;
+  }
+
+  /* Element 3 — initials mark, top-right */
+  .mark {
+    position: absolute;
+    top: 44px;
+    right: 56px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    color: #999999;
+  }
+</style>
+</head>
+<body>
+  <div class="banner">
+    <div class="main">Building consumer products.</div>
+    <div class="sub">Barcelona · Open to Product Manager roles</div>
+    <div class="mark">RQ</div>
+  </div>
+</body>
+</html>
